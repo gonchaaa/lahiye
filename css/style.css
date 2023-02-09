@@ -1798,4 +1798,302 @@
     height: 25vh;
     margin-bottom: 230px;
   }
+}
+container {
+  width: 90%;
+  margin: auto;
+}
+
+#header .nav-menu {
+  width: 100%;
+  height: 20vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+#header .nav-menu .logo {
+  width: 30%;
+  padding-left: 90px;
+}
+#header .nav-bar {
+  padding-left: 80px;
+  width: 70%;
+}
+#header .nav-bar ul {
+  display: flex;
+}
+#header .nav-bar ul li {
+  padding-left: 20px;
+  list-style: none;
+}
+#header .nav-bar ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-weight: bold;
+}
+#header .nav-bar ul li a i {
+  padding-left: 10px;
+}
+#header .nav-bar ul li a i:hover {
+  transform: rotate(90deg);
+}
+#header .nav-bar ul li a:hover {
+  color: #DBB295;
+  transition: 0.5s ease-in-out;
+}
+
+#background .products {
+  height: 50vh;
+  background-image: url(../photos/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#background .shop .box-left {
+  margin-top: 60px;
+}
+#background .shop .box-left .box {
+  padding: 60px;
+  border: 10px solid rgba(228, 162, 197, 0.1568627451);
+  margin-top: 20px;
+  position: relative;
+}
+#background .shop .box-left .box .filter {
+  position: absolute;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #DBB295;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  padding: 15px 30px;
+  margin: 30px 0 80px 80px;
+}
+#background .shop .box-left .box .filter:hover::before {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: white;
+}
+#background .shop .box-left .box .filter::before {
+  content: "";
+  background-color: #141414;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+#background .shop .box-left .box .filter::after {
+  content: "";
+  background-color: #141414;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+#background .shop .box-left .list li {
+  list-style: none;
+  padding-top: 10px;
+}
+#background .shop .box-left .list li a {
+  text-decoration: none;
+  color: black;
+}
+#background .shop .box-left .list li a:hover {
+  color: #DBB295;
+  transition: 0.5s ease-in-out;
+}
+#background .shop .box-left .last {
+  display: flex;
+  flex-wrap: wrap;
+}
+#background .shop .box-left .last li {
+  list-style: none;
+  width: 50%;
+  padding: 10px;
+}
+#background .shop .box-left .last li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  border: 1px solid black;
+}
+#background .shop .box-left .last li a:hover {
+  background-color: #141414;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+#background .shop input {
+  padding: 10px 115px;
+}
+#background .box-right .sort {
+  padding: 10px 90px;
+  margin: 60px 60px 30px 0;
+  background-color: #e2dfdd;
+}
+#background .box-right .sort a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding-left: 40%;
+}
+#background .box-right .sort a i {
+  padding-left: 60px;
+}
+#background .box-right .glasses {
+  padding-bottom: 10px;
+  padding-left: 80px;
+  position: relative;
+}
+#background .box-right .glasses:hover .overlay {
+  opacity: 1;
+}
+#background .box-right .glasses .overlay {
+  width: 82%;
+  height: 83.5%;
+  background-color: rgba(59, 59, 59, 0.276);
+  position: absolute;
+  top: 0;
+  left: 15.3%;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+#background .box-right .glasses .overlay .info {
+  width: 50%;
+  height: 50px;
+  background-color: white;
+  position: relative;
+  top: 75%;
+  left: 23%;
+  transition: 0.5s ease-in-out;
+}
+#background .box-right .glasses .overlay .info:hover {
+  background-color: #DFBA9F;
+}
+#background .box-right .glasses .overlay .info p {
+  font-size: 13px;
+}
+#background .box-right .glasses .overlay .info p i {
+  font-size: 18px;
+  padding: 5px 10px 0 0;
+}
+#background .box-right .glasses .overlay .add {
+  width: 50%;
+  height: 50px;
+  background-color: black;
+  position: relative;
+  top: 78%;
+  left: 23%;
+  transition: 0.5s ease-in-out;
+}
+#background .box-right .glasses .overlay .add:hover {
+  background-color: #DFBA9F;
+}
+#background .box-right .glasses .overlay .add p {
+  color: white;
+  font-size: 12px;
+  padding-top: 15px;
+}
+#background .box-right .glasses .overlay .add p i {
+  padding-right: 8px;
+}
+#background .box-right .glasses a {
+  text-decoration: none;
+}
+#background .box-right .glasses a p {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 10px;
+  transition: 0.3s ease-in-out;
+}
+#background .box-right .glasses a p:hover {
+  color: #DFBA9F;
+}
+#background .box-right .glasses a span {
+  color: #DFBA9F;
+  font-weight: bold;
+  padding-left: 170px;
+}
+
+#footer {
+  background-color: #141414;
+}
+#footer .end .top {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+#footer .end .top h1 {
+  color: #DFBA9F;
+  font-family: "Mrs Saint Delafield", cursive;
+}
+#footer .end .top .input {
+  margin-left: 60px;
+}
+#footer .end .top .input input {
+  padding: 15px 80px;
+}
+#footer .end .top span {
+  background-color: #DBB295;
+  padding: 18px 40px;
+}
+#footer hr {
+  color: #DBB295;
+}
+#footer .middle {
+  display: flex;
+  width: 100%;
+  margin: 70px 20px;
+}
+#footer .middle .box {
+  width: 33.333%;
+}
+#footer .middle .box img {
+  margin-bottom: 30px;
+}
+#footer .middle .box span {
+  font-size: 15px;
+  color: #cdc6c0;
+}
+#footer .middle .box i {
+  padding-right: 8px;
+  color: #DBB295;
+}
+#footer .middle .box h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: #DBB295;
+}
+#footer .middle .box a {
+  text-decoration: none;
+  color: white;
+}
+#footer .middle .box ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer .middle .box ul li {
+  list-style: none;
+  width: 50%;
+}
+#footer .bottom {
+  padding: 30px 0;
+  text-align: center;
+}
+#footer .bottom span {
+  color: #DBB295;
+}
+
+@media (max-width: 576px) {
+  #header {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
