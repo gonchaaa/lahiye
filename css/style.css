@@ -1,6 +1,11 @@
+#header {
+  position: absolute;
+  z-index: 10;
+}
+
 #start .make {
   width: 100%;
-  height: 150vh;
+  padding: 25rem 0;
   background-image: url(../img/SLIDE_01.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -77,16 +82,16 @@
   background-color: black;
   transition: 0.5s ease-in-out;
 }
-#start .number {
+#start .make .container1 .number {
   position: absolute;
   top: 30%;
   height: 30vh;
 }
-#start .number span {
+#start .make .container1 .number span {
   color: #ddb091;
   font-size: 25px;
 }
-#start .number span::before {
+#start .make .container1 .number span::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -95,39 +100,33 @@
   top: 10%;
   left: 0;
 }
-#start .number p {
+#start .make .container1 .number p {
   color: white;
   font-size: 25px;
 }
-
-#new {
-  width: 100%;
-  min-height: 220vh;
-  background-color: #F9F1EC;
-  position: relative;
-}
-#new .perfection {
+#start .perfection {
   width: 90%;
   position: absolute;
   left: 5%;
-  bottom: 68%;
+  bottom: -100%;
+  z-index: 999;
   height: 85vh;
   background-color: white;
 }
-#new .perfection .collection {
+#start .perfection .collection {
   position: relative;
   margin-top: 20px;
 }
-#new .perfection .collection .collection1 {
+#start .perfection .collection .collection1 {
   position: absolute;
   bottom: 5%;
   left: 26%;
 }
-#new .perfection .collection .collection1 h1 {
+#start .perfection .collection .collection1 h1 {
   font-size: 70px;
   font-family: "Prata", serif;
 }
-#new .perfection .collection .collection1 h1::before {
+#start .perfection .collection .collection1 h1::before {
   content: "";
   position: absolute;
   width: 25%;
@@ -136,12 +135,12 @@
   top: 15%;
   left: 70%;
 }
-#new .perfection .collection .collection1 p {
+#start .perfection .collection .collection1 p {
   width: 100%;
   font-size: 30px;
   font-family: "Prata", serif;
 }
-#new .perfection .collection .collection1 a {
+#start .perfection .collection .collection1 a {
   text-decoration: none;
   color: #D7BBAD;
   padding-left: 50px;
@@ -149,13 +148,13 @@
   font-weight: 500;
   transition: 0.5s ease-in-out;
 }
-#new .perfection .collection .collection1 a:hover {
+#start .perfection .collection .collection1 a:hover {
   padding-left: 15px;
 }
-#new .perfection .collection .collection1 a:hover::before {
+#start .perfection .collection .collection1 a:hover::before {
   width: 48%;
 }
-#new .perfection .collection .collection1 a::before {
+#start .perfection .collection .collection1 a::before {
   content: "";
   position: absolute;
   width: 15%;
@@ -164,29 +163,28 @@
   bottom: 4%;
   left: 5%;
 }
-#new .perfection .autumn {
+#start .perfection .autumn {
   background-color: #fae9e1;
   width: 100%;
   height: 65vh;
-  transform: scale(1);
 }
-#new .perfection .male {
+#start .perfection .male {
   width: 58%;
   height: 58vh;
   position: absolute;
   left: 36%;
   bottom: 25%;
 }
-#new .perfection .male a {
+#start .perfection .male a {
   text-decoration: none;
 }
-#new .perfection .male a .winter {
+#start .perfection .male a .winter {
   width: 100%;
   height: 53vh;
   background-color: #000000;
   position: relative;
 }
-#new .perfection .male a .winter .overlay {
+#start .perfection .male a .winter .overlay {
   width: 0;
   height: 1px;
   background-color: white;
@@ -196,7 +194,7 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .perfection .male a .winter .overlay1 {
+#start .perfection .male a .winter .overlay1 {
   width: 0.5px;
   height: 0;
   background-color: white;
@@ -206,7 +204,7 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .perfection .male a .winter::before {
+#start .perfection .male a .winter::before {
   content: "";
   position: absolute;
   width: 0;
@@ -217,7 +215,7 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .perfection .male a .winter::after {
+#start .perfection .male a .winter::after {
   content: "";
   position: absolute;
   width: 0.5px;
@@ -228,42 +226,42 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .perfection .male a .winter:hover::before {
+#start .perfection .male a .winter:hover::before {
   opacity: 1;
   width: 90%;
 }
-#new .perfection .male a .winter:hover::after {
+#start .perfection .male a .winter:hover::after {
   height: 38vh;
   opacity: 1;
 }
-#new .perfection .male a .winter:hover .overlay {
+#start .perfection .male a .winter:hover .overlay {
   opacity: 1;
   width: 90%;
 }
-#new .perfection .male a .winter:hover .overlay1 {
+#start .perfection .male a .winter:hover .overlay1 {
   height: 38vh;
   opacity: 1;
 }
-#new .perfection .male a .winter p {
+#start .perfection .male a .winter p {
   color: white;
   display: inline-block;
   padding: 15px;
   font-size: 18px;
   transition: 0.3s ease-in-out;
 }
-#new .perfection .male a .winter p:hover {
+#start .perfection .male a .winter p:hover {
   color: #D7BBAD;
 }
-#new .perfection .male a .winter p span {
+#start .perfection .male a .winter p span {
   color: #D7BBAD;
 }
-#new .perfection .male a .summer {
+#start .perfection .male a .summer {
   width: 100%;
   height: 53vh;
   background-color: black;
   position: relative;
 }
-#new .perfection .male a .summer .overlay {
+#start .perfection .male a .summer .overlay {
   width: 0;
   height: 1px;
   background-color: white;
@@ -273,7 +271,7 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .perfection .male a .summer .overlay1 {
+#start .perfection .male a .summer .overlay1 {
   width: 0.5px;
   height: 0;
   background-color: white;
@@ -283,7 +281,7 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .perfection .male a .summer::before {
+#start .perfection .male a .summer::before {
   content: "";
   position: absolute;
   width: 0;
@@ -294,7 +292,7 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .perfection .male a .summer::after {
+#start .perfection .male a .summer::after {
   content: "";
   position: absolute;
   width: 0.5px;
@@ -305,42 +303,42 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .perfection .male a .summer:hover::before {
+#start .perfection .male a .summer:hover::before {
   opacity: 1;
   width: 90%;
 }
-#new .perfection .male a .summer:hover::after {
+#start .perfection .male a .summer:hover::after {
   height: 38vh;
   opacity: 1;
 }
-#new .perfection .male a .summer:hover .overlay {
+#start .perfection .male a .summer:hover .overlay {
   opacity: 1;
   width: 90%;
 }
-#new .perfection .male a .summer:hover .overlay1 {
+#start .perfection .male a .summer:hover .overlay1 {
   height: 38vh;
   opacity: 1;
 }
-#new .perfection .male a .summer p {
+#start .perfection .male a .summer p {
   color: white;
   display: inline-block;
   padding: 15px;
   font-size: 18px;
   transition: 0.3s ease-in-out;
 }
-#new .perfection .male a .summer p:hover {
+#start .perfection .male a .summer p:hover {
   color: #D7BBAD;
 }
-#new .perfection .male a .summer p span {
+#start .perfection .male a .summer p span {
   color: #D7BBAD;
 }
-#new .perfection .male a .spring {
+#start .perfection .male a .spring {
   width: 100%;
   height: 53vh;
   background-color: black;
   position: relative;
 }
-#new .perfection .male a .spring .overlay {
+#start .perfection .male a .spring .overlay {
   width: 0;
   height: 1px;
   background-color: white;
@@ -350,7 +348,7 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .perfection .male a .spring .overlay1 {
+#start .perfection .male a .spring .overlay1 {
   width: 0.5px;
   height: 0;
   background-color: white;
@@ -360,7 +358,7 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .perfection .male a .spring::before {
+#start .perfection .male a .spring::before {
   content: "";
   position: absolute;
   width: 0;
@@ -371,7 +369,7 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .perfection .male a .spring::after {
+#start .perfection .male a .spring::after {
   content: "";
   position: absolute;
   width: 0.5px;
@@ -382,79 +380,92 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .perfection .male a .spring:hover::before {
+#start .perfection .male a .spring:hover::before {
   opacity: 1;
   width: 90%;
 }
-#new .perfection .male a .spring:hover::after {
+#start .perfection .male a .spring:hover::after {
   height: 38vh;
   opacity: 1;
 }
-#new .perfection .male a .spring:hover .overlay {
+#start .perfection .male a .spring:hover .overlay {
   opacity: 1;
   width: 90%;
 }
-#new .perfection .male a .spring:hover .overlay1 {
+#start .perfection .male a .spring:hover .overlay1 {
   height: 38vh;
   opacity: 1;
 }
-#new .perfection .male a .spring p {
+#start .perfection .male a .spring p {
   color: white;
   display: inline-block;
   padding: 15px;
   font-size: 18px;
   transition: 0.3s ease-in-out;
 }
-#new .perfection .male a .spring p:hover {
+#start .perfection .male a .spring p:hover {
   color: #D7BBAD;
 }
-#new .perfection .male a .spring p span {
+#start .perfection .male a .spring p span {
   color: #D7BBAD;
 }
-#new .container-one {
+
+#txtt {
+  width: 100%;
+  padding: 25rem 0;
+  background-color: #F9F1EC;
+  position: relative;
+}
+#txtt .container-one {
   width: 80%;
+  margin: auto;
+  padding-top: 5rem;
   position: absolute;
-  top: 43%;
-  left: 13%;
+  top: 55%;
+  left: 10%;
 }
-#new .container-one::before {
+#txtt .container-one::before {
   content: "";
   position: absolute;
   width: 1px;
   height: 10vh;
-  bottom: 100%;
+  top: 20%;
   left: 45%;
   background-color: #ddb091;
 }
-#new .container-one p {
+#txtt .container-one p {
   font-size: 20px;
   width: 90%;
   text-align: center;
   font-family: "Prata", serif;
 }
-#new .container-one img {
+#txtt .container-one img {
   margin-top: 15px;
   position: absolute;
   left: 40%;
 }
-#new .video {
+
+#videos {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #F9F1EC;
+}
+#videos .video {
   width: 90%;
+  margin: auto;
   height: 100vh;
-  position: absolute;
-  top: 65%;
-  left: 5%;
   background-image: url(../img/video-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-#new .video .overlay2 {
+#videos .video .overlay2 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.326);
   position: relative;
 }
-#new .video .overlay2 .overlay {
+#videos .video .overlay2 .overlay {
   width: 0;
   height: 0.5px;
   background-color: white;
@@ -464,7 +475,7 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .video .overlay2 .overlay1 {
+#videos .video .overlay2 .overlay1 {
   width: 0.5px;
   height: 0;
   background-color: white;
@@ -474,7 +485,7 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .video .overlay2::before {
+#videos .video .overlay2::before {
   content: "";
   position: absolute;
   width: 0;
@@ -485,7 +496,7 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .video .overlay2::after {
+#videos .video .overlay2::after {
   content: "";
   position: absolute;
   width: 0.5px;
@@ -496,23 +507,23 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-#new .video .overlay2:hover::before {
+#videos .video .overlay2:hover::before {
   opacity: 1;
   width: 94%;
 }
-#new .video .overlay2:hover::after {
+#videos .video .overlay2:hover::after {
   height: 90vh;
   opacity: 1;
 }
-#new .video .overlay2:hover .overlay {
+#videos .video .overlay2:hover .overlay {
   opacity: 1;
   width: 94%;
 }
-#new .video .overlay2:hover .overlay1 {
+#videos .video .overlay2:hover .overlay1 {
   height: 90vh;
   opacity: 1;
 }
-#new .video .overlay2 .icon {
+#videos .video .overlay2 .icon {
   width: 80px;
   height: 80px;
   background-color: white;
@@ -522,10 +533,10 @@
   transform: translate(-50%, -50%);
   border-radius: 15mm;
 }
-#new .video .overlay2 .icon:hover i {
+#videos .video .overlay2 .icon:hover i {
   color: #D7BBAD;
 }
-#new .video .overlay2 .icon i {
+#videos .video .overlay2 .icon i {
   position: absolute;
   left: 13%;
   top: 11%;
@@ -535,13 +546,13 @@
 
 #online {
   width: 100%;
-  height: 320vh;
+  padding: 60rem 0;
   position: relative;
 }
 #online .store {
   width: 80%;
   position: absolute;
-  top: 15%;
+  top: 8%;
   left: 10%;
   text-align: center;
 }
@@ -562,7 +573,7 @@
 #online .trend {
   width: 80%;
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 10%;
   padding-bottom: 70px;
 }
@@ -980,13 +991,12 @@
 
 #service {
   width: 100%;
-  height: 170vh;
+  padding: 5rem 0;
   background-color: black;
 }
 #service .choose {
   width: 90%;
   margin: auto;
-  padding-top: 65px;
   position: relative;
 }
 #service .choose::before {
@@ -1102,7 +1112,7 @@
 
 #photos {
   width: 100%;
-  height: 40vh;
+  padding: 5rem 0;
   background-color: #F9F1EC;
   padding-top: 50px;
 }
@@ -1123,7 +1133,7 @@
 
 #fashion {
   width: 100%;
-  height: 120vh;
+  padding: 20rem 0;
   position: relative;
 }
 #fashion .recent {
@@ -1441,7 +1451,7 @@
 
 @media (max-width: 576px) {
   #start .make {
-    height: 70vh;
+    padding: 15rem 0;
   }
   #start .make .personal {
     opacity: 0;
@@ -1464,9 +1474,9 @@
   #start .make .container1 .look a::after {
     content: "";
     position: absolute;
-    top: 82%;
-    left: 25%;
-    width: 18%;
+    bottom: -11%;
+    left: 30%;
+    width: 15%;
     height: 0.5px;
   }
   #start .make .container1 .look .more {
@@ -1485,318 +1495,352 @@
   #start .make .container1 .number {
     opacity: 0;
   }
-  #new {
-    height: 290vh;
-    background-color: #F9F1EC;
+  #start .make .container1 .number span {
+    color: #ddb091;
+    font-size: 25px;
   }
-  #new .perfection {
-    left: 5%;
-    bottom: 31%;
-    height: 200vh;
+  #start .make .container1 .number span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #DFBA9F;
+    bottom: 10%;
+    left: 0;
   }
-  #new .perfection .autumn {
-    background-color: #F9F1EC;
-    width: 80%;
-    height: 45vh;
+  #start .perfection {
+    top: 100%;
+    z-index: 999;
+    padding: 25rem 0;
+    background-color: white;
+  }
+  #start .perfection .collection {
+    position: relative;
+    bottom: 100%;
+  }
+  #start .perfection .autumn {
+    background-color: #fae9e1;
+    width: 60%;
     margin: auto;
-    margin-top: 40px;
+    padding: 1rem 0;
   }
-  #new .perfection .male {
+  #start .perfection .male {
+    width: 60%;
+    padding: 30rem 0;
     position: absolute;
-    top: 23%;
+    margin: 0;
     left: 20%;
-    margin-top: 40px;
+    top: 60%;
   }
-  #new .perfection .male a .winter {
-    height: 38vh;
-    margin-top: 30px;
+  #start .perfection .male a {
+    text-decoration: none;
   }
-  #new .perfection .male a .summer {
-    height: 38vh;
-    margin-top: 100px;
-  }
-  #new .perfection .male a .spring {
-    height: 38vh;
-    margin-top: 100px;
-  }
-  #new .container-one {
+  #start .perfection .male a .winter {
     position: absolute;
-    top: 75%;
+    top: 0;
+    background-color: #FAE9E1;
   }
-  #new .container-one p {
+  #start .perfection .male a .winter img {
+    position: absolute;
+    top: -11%;
+    left: 10%;
+    background-color: #FAE9E1;
     width: 100%;
   }
-  #new .container-one img {
+  #start .perfection .male a .winter .pler {
     position: absolute;
-    left: 25%;
+    top: 94%;
+    width: 100%;
+    left: 10%;
+    background-color: #000000;
   }
-  #new .video {
+  #start .perfection .male a .winter .overlay {
+    width: 0;
+    height: 0.5px;
+    background-color: white;
+    position: absolute;
+    bottom: 13%;
+    left: 15%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  #start .perfection .male a .winter .overlay1 {
+    width: 0.5px;
+    height: 0;
+    background-color: white;
+    position: absolute;
+    bottom: 14%;
+    left: 100%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  #start .perfection .male a .winter::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.5px;
+    background-color: white;
+    top: -5%;
+    left: 15%;
+    opacity: 0;
+    z-index: 999;
+    transition: 0.5s ease-in-out;
+  }
+  #start .perfection .male a .winter::after {
+    content: "";
+    position: absolute;
+    width: 0.5px;
+    height: 0;
+    background-color: white;
+    top: -5%;
+    left: 15%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  #start .perfection .male a .winter:hover::before {
+    opacity: 1;
+    width: 85%;
+  }
+  #start .perfection .male a .winter:hover::after {
+    height: 48vh;
+    opacity: 1;
+  }
+  #start .perfection .male a .winter:hover .overlay {
+    opacity: 1;
+    width: 85%;
+  }
+  #start .perfection .male a .winter:hover .overlay1 {
+    height: 48vh;
+    opacity: 1;
+  }
+  #start .perfection .male a .winter p {
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+  }
+  #start .perfection .male a .summer {
+    position: absolute;
+    top: 47%;
+    background-color: #FAE9E1;
+  }
+  #start .perfection .male a .summer img {
+    position: absolute;
+    top: -11%;
+    left: 10%;
+    background-color: #FAE9E1;
+    width: 100%;
+  }
+  #start .perfection .male a .summer .pler {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    left: 10%;
+    background-color: #000000;
+  }
+  #start .perfection .male a .summer .overlay {
+    width: 0;
+    height: 0.5px;
+    background-color: white;
+    position: absolute;
+    bottom: 13%;
+    left: 15%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  #start .perfection .male a .summer .overlay1 {
+    width: 0.5px;
+    height: 0;
+    background-color: white;
+    position: absolute;
+    bottom: 14%;
+    left: 100%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  #start .perfection .male a .summer::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.5px;
+    background-color: white;
+    top: -5%;
+    left: 15%;
+    opacity: 0;
+    z-index: 999;
+    transition: 0.5s ease-in-out;
+  }
+  #start .perfection .male a .summer::after {
+    content: "";
+    position: absolute;
+    width: 0.5px;
+    height: 0;
+    background-color: white;
+    top: -5%;
+    left: 15%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  #start .perfection .male a .summer:hover::before {
+    opacity: 1;
+    width: 85%;
+  }
+  #start .perfection .male a .summer:hover::after {
+    height: 48vh;
+    opacity: 1;
+  }
+  #start .perfection .male a .summer:hover .overlay {
+    opacity: 1;
+    width: 85%;
+  }
+  #start .perfection .male a .summer:hover .overlay1 {
+    height: 48vh;
+    opacity: 1;
+  }
+  #start .perfection .male a .summer p {
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+  }
+  #start .perfection .male a .spring {
     position: absolute;
     top: 93%;
-    height: 20vh;
+    background-color: #fae9e1;
+  }
+  #start .perfection .male a .spring img {
+    position: absolute;
+    top: -11%;
+    left: 10%;
+    background-color: #fae9e1;
+    width: 100%;
+  }
+  #start .perfection .male a .spring .pler {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    left: 10%;
+    background-color: #000000;
+  }
+  #start .perfection .male a .spring .overlay {
+    width: 0;
+    height: 0.5px;
+    background-color: white;
+    position: absolute;
+    bottom: 13%;
+    left: 15%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  #start .perfection .male a .spring .overlay1 {
+    width: 0.5px;
+    height: 0;
+    background-color: white;
+    position: absolute;
+    bottom: 14%;
+    left: 100%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  #start .perfection .male a .spring::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.5px;
+    background-color: white;
+    top: -5%;
+    left: 15%;
+    opacity: 0;
+    z-index: 999;
+    transition: 0.5s ease-in-out;
+  }
+  #start .perfection .male a .spring::after {
+    content: "";
+    position: absolute;
+    width: 0.5px;
+    height: 0;
+    background-color: white;
+    top: -5%;
+    left: 15%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  #start .perfection .male a .spring:hover::before {
+    opacity: 1;
+    width: 85%;
+  }
+  #start .perfection .male a .spring:hover::after {
+    height: 48vh;
+    opacity: 1;
+  }
+  #start .perfection .male a .spring:hover .overlay {
+    opacity: 1;
+    width: 85%;
+  }
+  #start .perfection .male a .spring:hover .overlay1 {
+    height: 48vh;
+    opacity: 1;
+  }
+  #start .perfection .male a .spring p {
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+  }
+  #txtt {
+    width: 100%;
+    padding: 20rem 0;
+    position: relative;
+  }
+  #txtt .container-one {
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+  }
+  #txtt .container-one::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 10vh;
+    bottom: 80%;
+    left: 45%;
+    background-color: #ddb091;
+  }
+  #txtt .container-one p {
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+    font-family: "Prata", serif;
+  }
+  #txtt .container-one img {
+    margin-top: 15px;
+    position: absolute;
+    left: 40%;
+  }
+  #videos {
+    width: 100%;
+    background-color: #F9F1EC;
+  }
+  #videos .video {
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    background-image: url(../img/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   #online {
-    height: 360vh;
-  }
-  #online .store {
-    position: absolute;
-    top: 4%;
-  }
-  #online .store p {
-    font-size: 40px;
-  }
-  #online .store h1 {
-    font-size: 40px;
-  }
-  #online .store span {
-    font-size: 15px;
-  }
-  #online .trend {
-    width: 85%;
-    position: absolute;
-    top: 15%;
-    padding-right: 15px;
-    margin-bottom: 0;
-  }
-  #online .trend .gloves {
-    margin-bottom: 90px;
-    padding: 0;
-    position: relative;
-  }
-  #online .trend .gloves .overlay {
-    background-color: rgba(0, 0, 0, 0);
-    opacity: 1;
-  }
-  #online .trend .gloves .overlay .info {
     display: none;
-  }
-  #online .trend .gloves .overlay .add {
-    position: relative;
-    top: 123%;
-    left: 18%;
-  }
-  #online .trend .gloves a span {
-    padding-left: 140px;
-  }
-  #online .trend .skirt {
-    width: 100%;
-    padding: 0;
-    margin-bottom: 70px;
-  }
-  #online .trend .skirt .overlay {
-    background-color: rgba(255, 255, 255, 0);
-    opacity: 1;
-    width: 100%;
-    height: 10vh;
-    left: 5%;
-    top: 46%;
-  }
-  #online .trend .skirt .overlay .info {
-    display: none;
-  }
-  #online .trend .skirt .overlay .add {
-    width: 40%;
-    position: relative;
-    top: 48%;
-  }
-  #online .trend .skirt a span {
-    padding-left: 140px;
-  }
-  #online .trend .sweater {
-    padding-left: 0;
-    margin: 10px 0 70px 0;
-  }
-  #online .trend .sweater .overlay {
-    background-color: rgba(59, 59, 59, 0);
-    opacity: 1;
-  }
-  #online .trend .sweater .overlay .info {
-    display: none;
-  }
-  #online .trend .sweater .overlay .add {
-    width: 100%;
-    position: relative;
-    top: 59%;
-    left: 45%;
-  }
-  #online .trend .sweater a::after {
-    position: absolute;
-    bottom: 47.5%;
-    left: 70%;
-  }
-  #online .trend .sweater a span {
-    padding-left: 90px;
-  }
-  #online .trend .cardigan {
-    padding: 0;
-  }
-  #online .trend .cardigan .overlay {
-    background-color: rgba(59, 59, 59, 0);
-    opacity: 1;
-  }
-  #online .trend .cardigan .overlay .info {
-    display: none;
-  }
-  #online .trend .cardigan .overlay .add {
-    width: 100%;
-    position: relative;
-    top: 122%;
-    left: -75%;
-  }
-  #online .trend .cardigan a::after {
-    position: absolute;
-    bottom: 23%;
-    left: 75%;
-  }
-  #online .trend .cardigan a span {
-    display: inline-block;
-    padding-left: 100px;
-  }
-  #online .trend .cardigan a span h6::before {
-    content: "";
-    position: absolute;
-    bottom: 3.5%;
-    left: 27%;
-    width: 18%;
-  }
-  #online .trend .more {
-    position: absolute;
-    top: 100%;
-    left: 16%;
-  }
-  #online .trend .more::after {
-    content: "";
-    position: absolute;
-    width: 25%;
-    left: 4%;
   }
   #service {
-    height: 200vh;
-  }
-  #service .choose {
-    padding-top: 65px;
-    position: relative;
-  }
-  #service .choose::before {
-    content: "";
-    position: absolute;
-    width: 6px;
-    height: 20vh;
-    top: 50%;
-    left: 85%;
-    background-color: red;
-  }
-  #service .choose::after {
-    content: "";
-    position: absolute;
-    width: 6px;
-    height: 34vh;
-    top: 27%;
-    left: 95%;
-    background-color: #efded3;
-  }
-  #service .choose .book {
-    padding: 80px 15px;
-    height: 110vh;
-  }
-  #service .choose .book h1 {
-    position: absolute;
-    font-size: 100px;
-    top: 10%;
-    z-index: 1;
-  }
-  #service .choose .book ul li {
-    margin-top: 20px;
-  }
-  #service .choose .book ul li .list3 {
     display: none;
-  }
-  #service .choose .book ul li hr {
-    display: none;
-  }
-  #service .choose .book ul li .list4 {
-    display: none;
-  }
-  #service .choose .book ul li span {
-    display: inline-block;
-    padding-bottom: 10px;
-  }
-  #service .choose .book ul li .button {
-    width: 40%;
-    height: 5vh;
-  }
-  #service .sale {
-    height: 75vh;
   }
   #photos {
-    height: 70vh;
-  }
-  #photos .photo-ones {
-    border-right: none;
-    padding-bottom: 60px;
-  }
-  #photos .photo-ones:nth-child(5) {
-    padding-top: 45px;
-  }
-  #photos .photo-ones a img {
-    width: 55%;
+    display: none;
   }
   #fashion {
-    position: relative;
-  }
-  #fashion .recent {
-    position: absolute;
-    top: 10%;
-    left: 5%;
-  }
-  #fashion .recent h1 {
-    font-size: 40px;
-  }
-  #fashion .stylist {
-    position: absolute;
-    top: 25%;
-  }
-  #fashion .stylist .photo-one {
-    position: relative;
-    margin-bottom: 200px;
-  }
-  #fashion .stylist .photo-one:hover::after {
-    height: 33vh;
-  }
-  #fashion .stylist .photo-one:hover .overlay1 {
-    height: 33vh;
-  }
-  #fashion .stylist .photo-two {
-    position: relative;
-    margin-bottom: 200px;
-  }
-  #fashion .stylist .photo-two:hover::after {
-    height: 33vh;
-    opacity: 1;
-  }
-  #fashion .stylist .photo-two:hover .overlay1 {
-    height: 33vh;
-  }
-  #fashion .stylist .photo-three {
-    position: relative;
-    margin-bottom: 200px;
-  }
-  #fashion .stylist .photo-three:hover::after {
-    height: 33vh;
-    opacity: 1;
-  }
-  #fashion .stylist .photo-three:hover .overlay1 {
-    height: 33vh;
-    opacity: 1;
-  }
-  #fashion .news {
-    position: absolute;
-    top: 43%;
-    left: 15%;
-  }
-  #fashion .news .season {
-    height: 25vh;
-    margin-bottom: 230px;
+    display: none;
   }
 }
 container {
@@ -1807,7 +1851,7 @@ container {
 #header .nav-menu {
   width: 100%;
   height: 20vh;
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   padding-top: 40px;
@@ -1817,31 +1861,29 @@ container {
   padding-left: 90px;
 }
 #header .nav-bar {
-  padding-left: 80px;
   width: 70%;
 }
 #header .nav-bar ul {
   display: flex;
 }
 #header .nav-bar ul li {
-  padding-left: 20px;
   list-style: none;
 }
 #header .nav-bar ul li a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: white;
   display: inline-block;
-  font-weight: bold;
+  padding-right: 20px;
+  transition: 0.5s ease-in-out;
 }
 #header .nav-bar ul li a i {
-  padding-left: 10px;
+  padding-left: 30px;
 }
 #header .nav-bar ul li a i:hover {
   transform: rotate(90deg);
 }
 #header .nav-bar ul li a:hover {
   color: #DBB295;
-  transition: 0.5s ease-in-out;
 }
 
 #background .products {
@@ -1871,8 +1913,7 @@ container {
   margin: 30px 0 80px 80px;
 }
 #background .shop .box-left .box .filter:hover::before {
-  width: 100%;
-  height: 100%;
+  width: 0;
   left: 0;
   color: white;
 }
@@ -1890,7 +1931,7 @@ container {
 #background .shop .box-left .box .filter::after {
   content: "";
   background-color: #141414;
-  top: 0;
+  bottom: 50%;
   right: 0;
   width: 0;
   height: 0;
@@ -2023,72 +2064,71 @@ container {
   font-weight: bold;
   padding-left: 170px;
 }
-
-#footer {
+#background #footer {
   background-color: #141414;
 }
-#footer .end .top {
+#background #footer .end .top {
   padding: 40px;
   display: flex;
   justify-content: center;
 }
-#footer .end .top h1 {
+#background #footer .end .top h1 {
   color: #DFBA9F;
   font-family: "Mrs Saint Delafield", cursive;
 }
-#footer .end .top .input {
+#background #footer .end .top .input {
   margin-left: 60px;
 }
-#footer .end .top .input input {
+#background #footer .end .top .input input {
   padding: 15px 80px;
 }
-#footer .end .top span {
+#background #footer .end .top span {
   background-color: #DBB295;
   padding: 18px 40px;
 }
-#footer hr {
+#background #footer hr {
   color: #DBB295;
 }
-#footer .middle {
+#background #footer .middle {
   display: flex;
   width: 100%;
   margin: 70px 20px;
 }
-#footer .middle .box {
+#background #footer .middle .box {
   width: 33.333%;
 }
-#footer .middle .box img {
+#background #footer .middle .box img {
   margin-bottom: 30px;
 }
-#footer .middle .box span {
+#background #footer .middle .box span {
   font-size: 15px;
   color: #cdc6c0;
 }
-#footer .middle .box i {
+#background #footer .middle .box i {
   padding-right: 8px;
   color: #DBB295;
 }
-#footer .middle .box h1 {
+#background #footer .middle .box h1 {
   font-family: "Times New Roman", Times, serif;
   color: #DBB295;
 }
-#footer .middle .box a {
+#background #footer .middle .box a {
   text-decoration: none;
   color: white;
 }
-#footer .middle .box ul {
+#background #footer .middle .box ul {
   display: flex;
   flex-wrap: wrap;
 }
-#footer .middle .box ul li {
+#background #footer .middle .box ul li {
   list-style: none;
   width: 50%;
 }
-#footer .bottom {
+#background #footer .bottom {
   padding: 30px 0;
   text-align: center;
 }
-#footer .bottom span {
+#background #footer .bottom span {
   color: #DBB295;
 }
 
